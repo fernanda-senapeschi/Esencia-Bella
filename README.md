@@ -1,2 +1,2 @@
 # Esencia-Bella
-Trabalho de Conclusão do Curso de Técnico em Informático com foco em Desenvolvimento Web realizado em 2024.
+Trabalho de Conclusão do Curso de Técnico em Informática com foco em Desenvolvimento Web realizado em 2024.
