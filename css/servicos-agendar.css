@@ -1,0 +1,116 @@
+.h-orientacao{
+    align-items: right;
+}
+
+.main{
+    overflow: hidden;
+    padding: 40px 40px 0px 40px;
+    width: 25vw; /* Define uma largura máxima de 1280px para o container .home */
+    height: 80vh;
+    margin: 0 auto; /* Centraliza o container horizontalmente na página */
+    display: grid;
+
+    float: left;
+}
+
+
+.horario .h{
+    width: 70px;/* Largura dos botões definidos em porcentagem do container pai*/
+    max-width: 350px;
+    padding: 10px 0px;
+    margin: 10px;
+    margin-top: 10px;
+    border: 2px solid #8a1ea9;
+    outline:none;
+    font-weight:bold;
+    letter-spacing:2px;
+    background-color:none;
+    font-size:10pt;
+    float: flex;
+    text-align:center;
+}
+
+.profissional .p1{
+    width: 170px;/* Largura dos botões definidos em porcentagem do container pai*/
+    max-width: 350px;
+    padding: 10px 0px;
+    margin: 10px;
+    margin-top: 10px;
+    border: 2px solid #8a1ea9;
+    outline:none;
+    font-weight:bold;
+    letter-spacing:2px;
+    background-color:none;
+    font-size:10pt;
+    float: flex;
+    text-align: center;
+}
+
+.profissional .p2{
+    width: 230px;/* Largura dos botões definidos em porcentagem do container pai*/
+    max-width: 350px;
+    padding: 10px 0px;
+    margin: 10px;
+    margin-top: 10px;
+    border: 2px solid #8a1ea9;
+    outline:none;
+    font-weight:bold;
+    letter-spacing:2px;
+    background-color:none;
+    font-size:10pt;
+    float: flex;
+    text-align:center;
+}
+
+.profissional .p3{
+    width: 185px;/* Largura dos botões definidos em porcentagem do container pai*/
+    max-width: 350px;
+    padding: 10px 0px;
+    margin: 10px;
+    margin-top: 10px;
+    border: 2px solid #8a1ea9;
+    outline:none;
+    font-weight:bold;
+    letter-spacing:2px;
+    background-color:none;
+    font-size:10pt;
+    float: flex;
+    text-align:center;
+}
+
+.txt{
+    width: 100vw;
+    height: 60vh;
+    
+}
+.txt > h1{
+    padding: 10px 10px 10px 10px;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(41, 38, 35);
+}
+.txt > h2{
+    padding: 0px 10px 10px 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(92, 86, 81);
+}
+
+.txt > p{
+    padding: 0px 10px 10px 10px;
+    width: 100vw;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.img{
+    width: 100vw;
+    height: 40vh;
+}
+.img > img{
+    width: 400px;
+    height: 300px;
+}

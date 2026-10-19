@@ -1,0 +1,103 @@
+.main-login {
+    width: 100vw; /* Largura total da viewport para o container principal de login */
+    height: 100vh; /* Altura total da viewport para o container principal de login */
+    display: flex; /* Utiliza Flexbox para layout no container principal de login */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha os itens em coluna dentro do container principal de login */
+}
+
+.card-login {
+    width: 60%; /* Largura do card de login definido em porcentagem do container pai */
+    display: flex; /* Utiliza Flexbox para layout no card de login */
+    align-items: center; /* Centraliza o conteúdo verticalmente dentro do card de login */
+    flex-direction: column; /* Alinha os itens em coluna dentro do card de login */
+    padding: 80px 0px 0px 0px; /* Adiciona preenchimento interno ao card de login */
+}
+
+.card-login > h1 {
+    color: #8a1ea9; /* Cor do título dentro do card de login */
+    font-weight: 700; /* Peso da fonte definido como muito negrito (800) para destaque */
+    margin: 0; /* Remove margens padrão do título para melhor controle de layout */
+    font-size: 28px;
+}
+
+.textfi {
+    width: 50%; /* Largura dos campos de entrada definida em porcentagem do container pai */
+    display: flex; /* Utiliza Flexbox para layout nos campos de entrada e rótulos (labels)*/
+    justify-content: center; /* Centraliza horizontalmente os elementos dentro deste container*/
+    align-items: flex-start; /* Alinha os itens ao topo (início) verticalmente*/
+    flex-direction: column; /* Alinha os itens em coluna dentro deste container*/
+    margin: 5px 0px; /* Margem vertical entre os campos de entrada*/
+}
+
+.textfi > input {
+    max-width: 80vw; /* O campo de entrada ocupa toda a largura disponível dentro do seu container pai*/
+    padding: 8px 8px; /* Preenchimento interno no campo de entrada*/
+    color: black; /* Cor do texto inserido no campo de entrada*/
+    font-size: 10pt; /* Tamanho da fonte no campo de entrada*/
+    background-color: #fff; /* Cor de fundo do campo de entrada*/
+    border-color: #8a1ea9;
+}
+
+.textfi > input::placeholder {
+   color: black;/* Cor do texto placeholder no campo de entrada*/
+}
+
+
+/* Estilizando o formulário */
+#formulario {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Estilizando os campos de entrada */
+
+
+input[type="password"]{
+    width: 52vw;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background-color: rgb(218, 198, 238);
+   
+}
+
+/* Estilizando o botão de envio */
+input[type="submit"] {
+    background-color: #8a1ea9; /* Verde */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type="submit"]:hover {
+    background-color: #571369; /* Verde escuro */
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    input[type="text"]{
+        width: 35.8vh;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+}

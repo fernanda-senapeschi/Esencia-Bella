@@ -1,0 +1,197 @@
+/* definição das div principal*/
+.main{
+    overflow: hidden;
+    margin-top: 60px;
+    max-width: 90vw; /* Define uma largura máxima de 1280px para o container .home */
+    max-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* definição das imgs da esquerda*/
+.esquerda-img{
+width: 35%;
+height: 100%;
+
+}
+
+/* definição das imgs da esquerda*/
+.esquerda-img > img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%; 
+    float: right; 
+}
+
+/* definição dos textos da direita*/
+.direita-txt{
+    width: 60%;
+    height: 100%;
+    margin: 80px 160px 0px 80px;
+
+}
+.direita-txt > h1{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(41, 38, 35);
+}
+.direita-txt > h2{
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(92, 86, 81);
+}
+.direita-txt > p{
+   
+    width: 100%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #8a1ea9;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    min-width: 120px;
+    max-width: 100%; /* Garante que o botão não ultrapasse a largura do container */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Evita quebra de linha dentro do botão */
+    overflow: hidden; /* Esconde o texto que ultrapassar o botão */
+    text-overflow: ellipsis; /* Adiciona reticências (...) se o texto for muito longo */
+}
+
+.voltar{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #c084d1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; /* Permite posicionamento absoluto */
+    top: 190px; /* Distância do topo */
+    left: 45px; /* Distância da esquerda */
+}
+
+.voltar:hover {
+    background-color: #8a1ea9;
+}
+
+/* Media queries para telas menores */
+@media screen and (max-width: 800px) {
+
+    .esquerda-img, .direita-txt {
+        flex: 1 1 100%; /* Cada seção ocupa 100% da largura */
+        margin: 0px;
+    }
+
+    .esquerda-img > img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .esquerda-img{
+        padding-right: 65px;
+    }
+    .direita-txt {
+        margin: 20px 0; /* Margem inferior para espaçamento */    
+    }
+
+    .direita-txt > h1 {
+        font-size: 24px; /* Ajusta o tamanho da fonte */
+    }
+
+    .direita-txt > h2 {
+        font-size: 1.1rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .direita-txt > p {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        display: grid;
+        margin-top: 30px;
+        max-height: 100vh;
+    }
+
+    .esquerda-img{
+        align-items: center;
+        width: 100%;
+        padding-right: 80px;
+    }
+    .esquerda-img > img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .esquerda-img, .direita-txt {
+        flex: 1 1 100%; /* Cada seção ocupa 100% da largura */
+        margin: 0px;
+    }
+
+
+    .direita-txt {
+        margin-top: 20px; /* Adiciona margem superior para espaçamento */
+        width: 100%;
+    }
+
+    .direita-txt > h1 {
+        font-size: 24px; /* Ajusta o tamanho da fonte */
+    }
+
+    .direita-txt > h2 {
+        font-size: 1.0rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .direita-txt > p {
+        font-size: 1.0rem; /* Ajusta o tamanho da fonte */
+        text-align: justify; 
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

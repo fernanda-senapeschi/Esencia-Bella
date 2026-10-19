@@ -1,0 +1,153 @@
+.main-login {
+    width: 100vw; /* Largura total da viewport para o container principal de login */
+    height: 100vh; /* Altura total da viewport para o container principal de login */
+    display: flex; /* Utiliza Flexbox para layout no container principal de login */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha os itens em coluna dentro do container principal de login */
+}
+
+.card-login {
+    width: 60%; /* Largura do card de login definido em porcentagem do container pai */
+    display: flex; /* Utiliza Flexbox para layout no card de login */
+    align-items: center; /* Centraliza o conteúdo verticalmente dentro do card de login */
+    flex-direction: column; /* Alinha os itens em coluna dentro do card de login */
+    margin: 100px 100px 0px 0px; /* Adiciona preenchimento interno ao card de login */
+}
+
+.card-login > h1 {
+    color:#8a1ea9;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.textfi {
+    width: 100%; /* Largura dos campos de entrada definida em porcentagem do container pai */
+    display: flex; /* Utiliza Flexbox para layout nos campos de entrada e rótulos (labels)*/
+    justify-content: center; /* Centraliza horizontalmente os elementos dentro deste container*/
+    align-items: flex-start; /* Alinha os itens ao topo (início) verticalmente*/
+    flex-direction: column; /* Alinha os itens em coluna dentro deste container*/
+    margin: 8px 0px; /* Margem vertical entre os campos de entrada*/
+}
+
+.textfi > input {
+    width: 100%; /* O campo de entrada ocupa toda a largura disponível dentro do seu container pai*/
+    padding: 8px 8px; /* Preenchimento interno no campo de entrada*/
+    color: #000; /* Cor do texto inserido no campo de entrada*/
+    font-size: 10pt; /* Tamanho da fonte no campo de entrada*/
+    background-color: #fff; /* Cor de fundo do campo de entrada*/
+    border-color: #8a1ea9;
+}
+
+.textfi > label {
+    color: black; /* Cor do texto dos rótulos (labels)*/
+    margin: 5px; /* Margem ao redor dos rótulos (labels)*/
+}
+
+.textfi > input::placeholder {
+   color: black;/* Cor do texto placeholder no campo de entrada*/
+}
+
+form {
+   width: 50%;
+    align-items: center;
+}
+
+/* link que ainda não foi visitado */
+
+/* link que ainda não foi visitado */
+a:link {
+    color: #8a1ea9;
+    text-decoration: none;
+ }
+ 
+ /* link que foi visitado */
+ a:visited {
+    text-decoration: none;
+     color: #8a1ea9;
+ }
+
+p{
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* Estilizando o botão de envio */
+input[type="submit"] {
+    max-width: 150px;
+    background-color: #8a1ea9; /* Verde */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 210px ;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #571369; /* Verde escuro */
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+    .textfi{
+        width: 50vw; /* Largura dos campos de entrada definida em porcentagem do container pai */
+    }
+
+    .card-login{
+        margin: 120px 60px 0px 15px; /* Adiciona preenchimento interno ao card de login */
+
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    a{
+        font-size: 15px;
+    }
+
+    input[type="submit"]{
+        font-size: 16px;
+        max-width: 130px;
+        min-width: 100px;
+        margin-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .textfi{
+        width: 100%; /* Largura dos campos de entrada definida em porcentagem do container pai */
+    }
+
+    .card-login{
+        margin: 100px 60px 0px 15px; /* Adiciona preenchimento interno ao card de login */
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    a{
+        font-size: 12px;
+    }
+    
+    input[type="submit"]{
+        font-size: 14px;
+        max-width: 110px;
+        min-width: 80px;
+        margin-top: 10px;
+    }
+
+    .card-login > h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+}

@@ -1,0 +1,123 @@
+h3{
+    font-family: "Alice", serif;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+p{
+    text-align: justify;
+    margin: 15px 230px 30px 230px;
+}
+
+.polaroid {
+    background-color:white;
+    padding: 7px;
+    box-shadow:0px 4px 8px 0px rgba(0,0,0,0.2);/* Sombra suave ao redor do card polaroid*/
+    text-align:center;
+    width:270px;/* Largura fixa do card polaroid*/
+    
+ 
+}
+
+button a{
+    text-decoration: none;
+}
+
+.polaroid img {
+    width:100%;/* A imagem ocupa toda a largura disponível dentro do card polaroid*/
+}
+
+
+.caption {
+    margin-top:10px;/* Espaço entre a imagem e a legenda*/
+    font-size:14px;/* Tamanho da fonte da legenda*/
+    color:#333;/* Cor da fonte da legenda*/
+   
+}
+ 
+.fotos {
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row; 
+    column-count:4; /*Número de colunas nas quais as fotos serão dispostas*/ 
+    column-gap:100px; /*Espaçamento entre as colunas das fotos*/ 
+    
+}
+
+a:link {
+    color: #fff;
+    text-decoration: none;
+ }
+ 
+ /* link que foi visitado */
+ a:visited {
+    text-decoration: none;
+     color: #fff;
+ }
+
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #8a1ea9;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    min-width: 120px;
+    max-width: 100%; /* Garante que o botão não ultrapasse a largura do container */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Evita quebra de linha dentro do botão */
+    overflow: hidden; /* Esconde o texto que ultrapassar o botão */
+    text-overflow: ellipsis; /* Adiciona reticências (...) se o texto for muito longo*/
+}
+
+
+.header .equipe{
+    display: flex; /* Utiliza o modelo Flexbox para layout no header */
+    justify-content: space-between; /* Espaça os itens dentro do header, criando espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+    
+    .fotos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 65px;
+        margin-left: 30px;
+    }
+
+    p{
+        margin: 15px 40px 30px 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .fotos{
+        display: grid;
+
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 70px;
+    }
+
+    .polaroid {
+        width: 60%; 
+        margin-bottom: -30px;
+    }
+
+    h3{
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,17 @@
+.voltar{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #c084d1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; /* Permite posicionamento absoluto */
+    top: 220px; /* Distância do topo */
+    left: 45px; /* Distância da esquerda */
+}
+
+.voltar:hover {
+    background-color: #8a1ea9;
+}

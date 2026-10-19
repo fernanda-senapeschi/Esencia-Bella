@@ -1,0 +1,125 @@
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura total dos elementos */
+    font-family: "Poppins", sans-serif; /* Define a fonte padrão como Poppins, com uma alternativa sans-serif se não estiver disponível */
+    font-size: 16px; /* Tamanho da fonte padrão do texto */
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+}
+
+.color {
+    font-weight: bold; /* Define o peso da fonte como negrito para elementos com a classe 'color' */
+}
+
+body {
+    background-color: #F6F4F3; /* Define a cor de fundo do corpo da página */
+}
+
+.home {
+    max-width: 1280px; /* Define uma largura máxima de 1280px para o container .home */
+    margin: 0 auto; /* Centraliza o container horizontalmente na página */
+}
+
+header {
+    width: 100%; /* Define a largura do header como 100% da largura do viewport */
+    padding: 10px 90px; /* Adiciona um preenchimento de 10px em cima e embaixo, e 90px nas laterais */
+}
+
+header .home {
+    display: flex; /* Utiliza o modelo Flexbox para layout no header */
+    justify-content: space-between; /* Espaça os itens dentro do header, criando espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+header .logo img {
+    max-width: 200px; /* Define uma largura máxima de 200px para a imagem do logo, mantendo sua proporção */
+    cursor: pointer; /* Muda o cursor para indicar que a imagem é clicável */
+}
+
+header .menu nav ul {
+    list-style-type: none; /* Remove as bolinhas padrão das listas não ordenadas */
+}
+
+header .menu nav ul li {
+    display: inline-block; /* Exibe os itens da lista em linha, permitindo margens entre eles */
+    margin: 0 30px; /* Adiciona uma margem horizontal de 30px entre os itens da lista */
+}
+
+header .menu nav ul li a {
+    color: #8a1ea9; /* Define a cor do texto dos links como um tom roxo específico */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+hr {
+    width: 100%; /* Define a largura da linha horizontal como 100% da largura do container pai */
+    height: 1px; /* Define a espessura da linha como 1 pixel */
+    background-color: #000000; /* Define a cor da linha como preta */
+    border: none; /* Remove qualquer borda padrão que possa ser aplicada ao elemento hr */
+    margin: 0 auto; /* Centraliza a linha horizontalmente, com margens superior e inferior de zero */
+}
+
+
+/* Estilo dos servicos */
+section.servicos{
+    padding: 0px;
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-top: 10px;
+}
+
+.interface {
+    max-width: 100%;
+    display: flex; /* Ativa o layout Flexbox */
+}
+
+.txt-direita {
+    width: 70%; /* Define a largura da coluna esquerda como 60% */
+    padding-right: 0px;
+    align-items: center;
+    /*padding-left: 0px;  Preenchimento interno */
+}
+
+
+
+section.image-esq {
+    width: 50%; /* Define a largura da coluna direita como 40% */
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+    /*padding: 5px;  Preenchimento interno */
+}
+
+
+.servicos .itens-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;     
+    gap:10%;
+    margin-bottom: 60px;
+}
+
+.servicos .itens-container .img-itens img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150%;
+    /*width: 200%;
+    height: 200%;
+    padding-right: 50px;*/
+}
+
+.servicos .itens-container .txt-itens h3{
+    font-size: 3em;
+    margin-bottom:20px;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    color: #000;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+}

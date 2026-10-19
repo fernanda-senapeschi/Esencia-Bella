@@ -1,0 +1,77 @@
+
+.sobrenos{
+    padding-top: 80px;
+    font-size: 16px;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura total dos elementos */
+    font-family: "Poppins", sans-serif; /* Define a fonte padrão como Poppins, com uma alternativa sans-serif se não estiver disponível */
+    
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+}
+.sobre {
+   font-weight:bold;
+   color:#000000d8;
+}
+
+p{
+    
+    text-align: center;
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-top: 15px;
+}
+
+footer {
+    background-color:#F6F4F3;
+    color: white;
+    text-align: center; /* Alinha o texto no centro */
+    padding: 10px 20px; /* Espaçamento interno */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Faz o rodapé ocupar toda a largura */
+}
+
+footer a {
+    color: #4CAF50; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+footer p{
+    font-weight:bold;
+   color:#000000d8;
+   
+}
+
+footer  a img{
+    bottom: 0px;
+    max-width: 140px;
+    padding-top: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+@media (max-width: 430px) {
+    p {
+        padding-left: 20px; /* Reduzir o preenchimento lateral em telas menores */
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 430px) {
+    .sobrenos {
+        flex-direction: row; /* Mudar para linha em telas maiores */
+        justify-content: space-around; /* Espaçamento entre os itens */
+        flex-wrap: wrap; /* Permitir quebra de linha */
+    }
+
+    .sobrenos div {
+        flex: 1; /* Cada item ocupa espaço igual */
+        min-width: 250px; /* Largura mínima para cada bloco */
+        margin: 20px; /* Margem entre os itens */
+        text-align: left; /* Alinhamento do texto para maior legibilidade */
+    }
+}
+
+

@@ -1,0 +1,44 @@
+.menu {
+    position: relative;
+}
+
+.menu nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: list-item;
+}
+
+.color a {
+    color: #FF5733; /* Exemplo de cor para o item de login */
+}

@@ -1,0 +1,317 @@
+
+.main{
+    overflow: hidden;
+    margin-top: 60px;
+    max-width: 90vw; /* Define uma largura máxima de 1280px para o container .home */
+    max-height: 50vh;
+    display: flex;
+    justify-content: space-between
+    
+}
+
+
+
+.esquerda-img{
+width: 35%;
+height: 100%;
+}
+
+
+.esquerda-img > img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    float:right;  
+}
+
+
+.direita-txt{
+    width: 60%;
+    height: 100%;
+    margin: 80px 160px 0px 80px;
+}
+.direita-txt > h1{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(41, 38, 35);
+}
+.direita-txt > h2{
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(92, 86, 81);
+}
+.direita-txt > p{
+  
+    width: 100%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    
+}
+
+
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: calc(10px + 2vw); /* A margem aumentará com a largura da viewport */
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+
+
+/* Container principal */
+.container {
+    width: 90%;
+    margin: calc(10px + 2vw); /* A margem aumentará com a largura da viewport */
+
+}
+
+/* Barra de pesquisa */
+.input-group {
+    margin-left: 300px;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.container .serv{
+    margin-left: 300px;
+    font-family: "Alice", serif;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #8a1ea9;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    min-width: 120px;
+    max-width: 100%; /* Garante que o botão não ultrapasse a largura do container */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Evita quebra de linha dentro do botão */
+    overflow: hidden; /* Esconde o texto que ultrapassar o botão */
+    text-overflow: ellipsis; /* Adiciona reticências (...) se o texto for muito longo */
+}
+
+.btn2{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #8a1ea9;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    min-width: 120px;
+    max-width: 100%; /* Garante que o botão não ultrapasse a largura do container */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Evita quebra de linha dentro do botão */
+    overflow: hidden; /* Esconde o texto que ultrapassar o botão */
+    text-overflow: ellipsis; /* Adiciona reticências (...) se o texto for muito longo*/
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Esconde o botão inicialmente */
+    background-color: #8a1ea9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#scrollToTopBtn:hover {
+    background-color: #8a1ea9;
+}
+
+@media screen and (max-width: 1300px) {
+    
+    .input-group {
+        margin-left: 55px;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    
+    .container .serv{
+        margin-left: 55px;
+        font-family: "Alice", serif;
+        font-weight: 200;
+        text-align: left;
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    .btn2{
+        margin-left: 10px;
+        font-size: 16px;
+        max-width: 120px;
+        min-width: 80px;  
+    }
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 800px) {
+    
+    .input-group {
+        margin-left: 100px;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    
+    .container .serv{
+        margin-left: 100px;
+        font-family: "Alice", serif;
+        font-weight: 200;
+        text-align: left;
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .esquerda-img{
+        padding-right: 65px;
+    }
+    .esquerda-img > img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .esquerda-img, .direita-txt {
+        flex: 1 1 100%; /* Cada seção ocupa 100% da largura */
+        margin: 0px;
+    }
+
+
+    .direita-txt > h1 {
+        font-size: 26px;
+    }
+
+    .direita-txt > h2 {
+        font-size: 1.1rem;
+    }
+
+    .direita-txt > p {
+        font-size: 0.9rem;
+    }
+    .direita-txt {
+        margin-top: 20px; /* Adiciona margem superior para espaçamento */
+    }
+    .btn2{
+        margin-left: 10px;
+        font-size: 14px;
+        max-width: 110px;
+        min-width: 80px;  
+    }
+    .btn{
+        font-size: 14px;
+        max-width: 110px;
+        min-width: 80px;
+        margin-top: 10px;
+    }
+
+    .container .serv{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .input-group {
+        margin: 0;
+        display: grid;
+        margin-bottom: 2rem;
+    }
+    .input-group input{
+        width: 100%;
+    }
+
+    
+    .container .serv{
+        margin: 0;
+        font-family: "Alice", serif;
+        font-weight: 200;
+        text-align: left;
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .main{
+        display: grid;
+        max-height: 70vh;
+    }
+    
+
+    .esquerda-img{
+        align-items: center;
+        width: 100%;
+        padding-right: 80px;
+    }
+    .esquerda-img > img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .esquerda-img, .direita-txt {
+        flex: 1 1 100%; /* Cada seção ocupa 100% da largura */
+        margin: 0px;
+    }
+
+    .direita-txt > h1 {
+        font-size: 25px;
+    }
+
+    .direita-txt > h2 {
+        font-size: 1.1rem;
+    }
+
+    .direita-txt > p {
+        font-size: 1.0rem;
+    }
+    .direita-txt {
+        margin-top: 20px; /* Adiciona margem superior para espaçamento */
+        width: 100%;
+        text-align: justify;
+    }
+    .btn2{
+        margin: 0;
+        margin-top: 5px;
+        font-size: 13px;
+        max-width: 100px;
+        min-width: 80px;  
+    }
+    .btn{
+        font-size: 14px;
+        max-width: 110px;
+        min-width: 80px;
+        margin-top: 10px;
+    }
+
+    .container .serv{
+        font-size: 22px;
+    }
+}

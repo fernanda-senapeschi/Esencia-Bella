@@ -1,0 +1,46 @@
+/* Estilizando o formulário */
+#formulario {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Estilizando os campos de entrada */
+
+
+input[type="email"]{
+    width: 92.5%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background-color: rgb(218, 198, 238);
+   
+}
+
+
+
+
+/* Estilizando o botão de envio */
+input[type="submit"] {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Verde escuro */
+}
